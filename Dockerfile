@@ -52,7 +52,7 @@ RUN pip3 install --no-cache-dir --upgrade pip setuptools && \
 RUN git clone --branch v0.3.13 --depth 1 https://github.com/comfyanonymous/ComfyUI.git $COMFYUI_PATH
 
 # Clone ComfyUI-Manager (pinned version) into custom_nodes directory
-RUN git clone --branch v3.17.7 --depth 1 https://github.com/ltdrdata/ComfyUI-Manager.git $CUSTOM_NODES_PATH/ComfyUI-Manager
+RUN git clone --branch 3.17.7 --depth 1 https://github.com/ltdrdata/ComfyUI-Manager.git $CUSTOM_NODES_PATH/ComfyUI-Manager
 
 # Clone ComfyUI-F5-TTS into custom_nodes directory
 RUN git clone https://github.com/niknah/ComfyUI-F5-TTS.git $CUSTOM_NODES_PATH/ComfyUI-F5-TTS
