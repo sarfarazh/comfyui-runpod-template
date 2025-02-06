@@ -45,13 +45,17 @@ RUN locale-gen en_US.UTF-8
 
 # Install JupyterLab
 RUN pip3 install --no-cache-dir --upgrade pip setuptools && \
-    pip3 install --no-cache-dir jupyterlab notebook jupyter_http_over_ws jupyterlab_code_formatter jupyterlab_widgets terminado onnxruntime-gpu llama-cpp-python xformers accelerate insightface
+    pip3 install --no-cache-dir jupyterlab notebook jupyter_http_over_ws jupyterlab_code_formatter jupyterlab_widgets terminado onnxruntime-gpu llama-cpp-python xformers accelerate insightface \
+    safetensors "numpy<2"
 
-# Clone ComfyUI repository
-RUN git clone https://github.com/comfyanonymous/ComfyUI.git $COMFYUI_PATH
+# Clone ComfyUI repository (pinned version)
+RUN git clone --branch v0.3.13 --depth 1 https://github.com/comfyanonymous/ComfyUI.git $COMFYUI_PATH
 
-# Clone ComfyUI-Manager into custom_nodes directory
-RUN git clone https://github.com/ltdrdata/ComfyUI-Manager.git $CUSTOM_NODES_PATH/ComfyUI-Manager
+# Clone ComfyUI-Manager (pinned version) into custom_nodes directory
+RUN git clone --branch v3.17.7 --depth 1 https://github.com/ltdrdata/ComfyUI-Manager.git $CUSTOM_NODES_PATH/ComfyUI-Manager
+
+# Clone ComfyUI-F5-TTS into custom_nodes directory
+RUN git clone https://github.com/niknah/ComfyUI-F5-TTS.git $CUSTOM_NODES_PATH/ComfyUI-F5-TTS
 
 # Set working directory to ComfyUI
 WORKDIR $COMFYUI_PATH
@@ -78,6 +82,15 @@ COPY src/user/ $USER_CONFIG_PATH/
 
 # Set execute permissions
 RUN chmod +x /opt/restore_snapshot.sh
+
+# Install dependencies for ComfyUI-F5-TTS
+WORKDIR $CUSTOM_NODES_PATH/ComfyUI-F5-TTS
+RUN git submodule update --init --recursive && \
+    pip3 install --no-cache-dir -r requirements.txt && \
+    pip3 install --no-cache-dir "huggingface-hub~=0.25.2" "gradio>=4.18,<4.24"
+
+# Return to ComfyUI directory
+WORKDIR $COMFYUI_PATH
 
 # Expose necessary ports
 EXPOSE 8188 8888 22
