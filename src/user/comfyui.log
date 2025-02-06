@@ -1,0 +1,112 @@
+## ComfyUI-Manager: installing dependencies done.
+[2025-02-06 06:40:29.386] ** ComfyUI startup time: 2025-02-06 06:40:29.386
+[2025-02-06 06:40:29.387] ** Platform: Linux
+[2025-02-06 06:40:29.387] ** Python version: 3.11.10 (main, Sep  7 2024, 18:35:41) [GCC 11.4.0]
+[2025-02-06 06:40:29.387] ** Python executable: /workspace/venv/bin/python
+[2025-02-06 06:40:29.387] ** ComfyUI Path: /workspace/ComfyUI
+[2025-02-06 06:40:29.388] ** ComfyUI Base Folder Path: /workspace/ComfyUI
+[2025-02-06 06:40:29.388] ** User directory: /workspace/ComfyUI/user
+[2025-02-06 06:40:29.388] ** ComfyUI-Manager config path: /workspace/ComfyUI/user/default/ComfyUI-Manager/config.ini
+[2025-02-06 06:40:29.389] ** Log path: /workspace/ComfyUI/user/comfyui.log
+
+Prestartup times for custom nodes:
+[2025-02-06 06:40:37.083]    0.0 seconds: /workspace/ComfyUI/custom_nodes/comfyui-easy-use
+[2025-02-06 06:40:37.083]    0.0 seconds: /workspace/ComfyUI/custom_nodes/rgthree-comfy
+[2025-02-06 06:40:37.083]   14.5 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager
+[2025-02-06 06:40:37.083] 
+[2025-02-06 06:40:51.917] Checkpoint files will always be loaded safely.
+[2025-02-06 06:40:52.269] Total VRAM 16076 MB, total RAM 257571 MB
+[2025-02-06 06:40:52.269] pytorch version: 2.6.0+cu124
+[2025-02-06 06:41:07.360] xformers version: 0.0.29.post2
+[2025-02-06 06:41:07.361] Set vram state to: NORMAL_VRAM
+[2025-02-06 06:41:07.361] Device: cuda:0 NVIDIA RTX 2000 Ada Generation : cudaMallocAsync
+[2025-02-06 06:41:10.196] Using xformers attention
+[2025-02-06 06:41:23.219] ComfyUI version: 0.3.13
+[2025-02-06 06:41:23.228] [Prompt Server] web root: /workspace/ComfyUI/web
+[2025-02-06 06:41:37.899] Building prefix dict from the default dictionary ...
+[2025-02-06 06:41:37.899] Building prefix dict from the default dictionary ...
+[2025-02-06 06:41:38.296] Dumping model to file cache /tmp/jieba.cache
+[2025-02-06 06:41:38.297] Dumping model to file cache /tmp/jieba.cache
+[2025-02-06 06:41:38.340] Loading model cost 0.436 seconds.
+[2025-02-06 06:41:38.340] Loading model cost 0.436 seconds.
+[2025-02-06 06:41:38.344] Prefix dict has been built successfully.
+[2025-02-06 06:41:38.344] Prefix dict has been built successfully.
+[2025-02-06 06:41:38.344] Word segmentation module jieba initialized.
+[2025-02-06 06:41:38.344] 
+[2025-02-06 06:41:52.568] PyTorch version 2.6.0 available.
+[2025-02-06 06:41:52.576] JAX version 0.5.0 available.
+[2025-02-06 06:41:54.901] generated new fontManager
+[2025-02-06 06:42:09.592] [34m[ComfyUI-Easy-Use] server: [0mv1.2.6 [92mLoaded[0m
+[2025-02-06 06:42:09.592] [34m[ComfyUI-Easy-Use] web root: [0m/workspace/ComfyUI/custom_nodes/comfyui-easy-use/web_version/v1 [92mLoaded[0m
+[2025-02-06 06:42:10.685] 
+[2025-02-06 06:42:10.685] [92m[rgthree-comfy] Loaded 42 exciting nodes. 🎉[00m
+[2025-02-06 06:42:10.686] 
+[2025-02-06 06:42:11.118] ### Loading: ComfyUI-Inspire-Pack (V1.13)
+[2025-02-06 06:42:11.342] ### Loading: ComfyUI-Impact-Pack (V8.8.1)
+[2025-02-06 06:42:11.864] [Impact Pack] Wildcards loading done.
+[2025-02-06 06:42:11.902] Total VRAM 16076 MB, total RAM 257571 MB
+[2025-02-06 06:42:11.902] pytorch version: 2.6.0+cu124
+[2025-02-06 06:42:11.902] xformers version: 0.0.29.post2
+[2025-02-06 06:42:11.903] Set vram state to: NORMAL_VRAM
+[2025-02-06 06:42:11.903] Device: cuda:0 NVIDIA RTX 2000 Ada Generation : cudaMallocAsync
+[2025-02-06 06:42:13.447] /workspace/venv/lib/python3.11/site-packages/albumentations/__init__.py:13: UserWarning: A new version of Albumentations is available: 2.0.3 (you have 1.4.15). Upgrade using: pip install -U albumentations. To disable automatic update checks, set the environment variable NO_ALBUMENTATIONS_UPDATE to 1.
+  check_for_updates()
+[2025-02-06 06:42:14.500] Nvidia APEX normalization not installed, using PyTorch LayerNorm
+[2025-02-06 06:42:14.899] Initializing ControlAltAI Nodes
+[2025-02-06 06:42:15.073] ### Loading: ComfyUI-Manager (V3.17.7)
+[2025-02-06 06:42:15.213] ### ComfyUI Revision: 1 [ef85058e] *DETACHED | Released on '2025-01-29'
+[2025-02-06 06:42:15.472] 
+Import times for custom nodes:
+[2025-02-06 06:42:15.472]    0.0 seconds: /workspace/ComfyUI/custom_nodes/websocket_image_save.py
+[2025-02-06 06:42:15.472]    0.0 seconds: /workspace/ComfyUI/custom_nodes/comfyui-florence2
+[2025-02-06 06:42:15.472]    0.0 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-GGUF
+[2025-02-06 06:42:15.472]    0.0 seconds: /workspace/ComfyUI/custom_nodes/comfyui_face_parsing
+[2025-02-06 06:42:15.472]    0.0 seconds: /workspace/ComfyUI/custom_nodes/comfyui_controlaltai_nodes
+[2025-02-06 06:42:15.473]    0.1 seconds: /workspace/ComfyUI/custom_nodes/comfyui_essentials
+[2025-02-06 06:42:15.473]    0.1 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-LTXTricks
+[2025-02-06 06:42:15.473]    0.1 seconds: /workspace/ComfyUI/custom_nodes/comfyui_patches_ll
+[2025-02-06 06:42:15.473]    0.1 seconds: /workspace/ComfyUI/custom_nodes/comfyui-kjnodes
+[2025-02-06 06:42:15.473]    0.1 seconds: /workspace/ComfyUI/custom_nodes/comfyui-custom-scripts
+[2025-02-06 06:42:15.473]    0.2 seconds: /workspace/ComfyUI/custom_nodes/comfyui-inspire-pack
+[2025-02-06 06:42:15.473]    0.2 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-LTXVideo
+[2025-02-06 06:42:15.473]    0.2 seconds: /workspace/ComfyUI/custom_nodes/rgthree-comfy
+[2025-02-06 06:42:15.473]    0.3 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-segment-anything-2
+[2025-02-06 06:42:15.473]    0.3 seconds: /workspace/ComfyUI/custom_nodes/comfyui-hunyuanvideowrapper
+[2025-02-06 06:42:15.473]    0.4 seconds: /workspace/ComfyUI/custom_nodes/comfyui-videohelpersuite
+[2025-02-06 06:42:15.473]    0.4 seconds: /workspace/ComfyUI/custom_nodes/comfyui-ollama
+[2025-02-06 06:42:15.473]    0.4 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager
+[2025-02-06 06:42:15.473]    0.4 seconds: /workspace/ComfyUI/custom_nodes/comfyui-fluxtrainer
+[2025-02-06 06:42:15.474]    0.5 seconds: /workspace/ComfyUI/custom_nodes/comfyui-impact-pack
+[2025-02-06 06:42:15.474]    0.8 seconds: /workspace/ComfyUI/custom_nodes/comfyui-easy-use
+[2025-02-06 06:42:15.474]    2.7 seconds: /workspace/ComfyUI/custom_nodes/comfyui_pulid_flux_ll
+[2025-02-06 06:42:15.474]    3.3 seconds: /workspace/ComfyUI/custom_nodes/comfyui-mmaudio
+[2025-02-06 06:42:15.474]    3.4 seconds: /workspace/ComfyUI/custom_nodes/comfyui-cogvideoxwrapper
+[2025-02-06 06:42:15.474]    3.6 seconds: /workspace/ComfyUI/custom_nodes/comfyui-supir
+[2025-02-06 06:42:15.474]   26.6 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-F5-TTS
+[2025-02-06 06:42:15.474] 
+[2025-02-06 06:42:15.527] Starting server
+
+[2025-02-06 06:42:15.527] To see the GUI go to: http://0.0.0.0:8188
+[2025-02-06 06:42:15.527] To see the GUI go to: http://[::]:8188
+[2025-02-06 06:42:15.627] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[2025-02-06 06:42:15.657] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[2025-02-06 06:42:15.706] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+[2025-02-06 06:42:15.753] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[2025-02-06 06:42:15.780] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[2025-02-06 06:42:22.061] FETCH ComfyRegistry Data: 5/32
+[2025-02-06 06:42:33.148] FETCH DATA from: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json [DONE]
+[2025-02-06 06:42:35.048] [Inspire Pack] IPAdapterPlus is not installed.
+[2025-02-06 06:42:55.161] Cannot connect to comfyregistry.
+[2025-02-06 06:42:55.338] nightly_channel: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/remote
+[2025-02-06 06:42:55.338] FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json [DONE]
+[2025-02-06 06:42:55.675] [ComfyUI-Manager] All startup tasks have been completed.
+[2025-02-06 06:45:24.870] FETCH DATA from: /workspace/ComfyUI/user/default/ComfyUI-Manager/cache/1742899825_extension-node-map.json [DONE]
+[2025-02-06 06:45:26.289] [ComfyUI-Manager] The ComfyRegistry cache update is still in progress, so an outdated cache is being used.
+[2025-02-06 06:45:26.473] nightly_channel: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/cache
+[2025-02-06 06:45:26.474] FETCH DATA from: /workspace/ComfyUI/user/default/ComfyUI-Manager/cache/1514988643_custom-node-list.json [DONE]
+[2025-02-06 06:45:26.570] FETCH DATA from: /workspace/ComfyUI/user/default/ComfyUI-Manager/cache/746607195_github-stats.json [DONE]
+[2025-02-06 06:45:26.595] FETCH DATA from: /workspace/ComfyUI/user/default/ComfyUI-Manager/cache/832903789_extras.json [DONE]
+[2025-02-06 06:45:27.377] FETCH DATA from: /workspace/ComfyUI/user/default/ComfyUI-Manager/cache/1742899825_extension-node-map.json [DONE]
+[2025-02-06 06:48:13.962] [ComfyUI-Manager] The ComfyRegistry cache update is still in progress, so an outdated cache is being used.
+[2025-02-06 06:48:14.119] nightly_channel: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/cache
+[2025-02-06 06:48:14.119] FETCH DATA from: /workspace/ComfyUI/user/default/ComfyUI-Manager/cache/1514988643_custom-node-list.json [DONE]

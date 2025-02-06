@@ -1,0 +1,246 @@
+## ComfyUI-Manager: installing dependencies done.
+[2025-02-05 14:36:36.334] ** ComfyUI startup time: 2025-02-05 14:36:36.334
+[2025-02-05 14:36:36.334] ** Platform: Linux
+[2025-02-05 14:36:36.335] ** Python version: 3.11.10 (main, Sep  7 2024, 18:35:41) [GCC 11.4.0]
+[2025-02-05 14:36:36.336] ** Python executable: /workspace/venv/bin/python
+[2025-02-05 14:36:36.336] ** ComfyUI Path: /workspace/ComfyUI
+[2025-02-05 14:36:36.336] ** ComfyUI Base Folder Path: /workspace/ComfyUI
+[2025-02-05 14:36:36.337] ** User directory: /workspace/ComfyUI/user
+[2025-02-05 14:36:36.337] ** ComfyUI-Manager config path: /workspace/ComfyUI/user/default/ComfyUI-Manager/config.ini
+[2025-02-05 14:36:36.338] ** Log path: /workspace/ComfyUI/user/comfyui.log
+
+Prestartup times for custom nodes:
+[2025-02-05 14:36:43.725]    0.0 seconds: /workspace/ComfyUI/custom_nodes/comfyui-easy-use
+[2025-02-05 14:36:43.725]    0.0 seconds: /workspace/ComfyUI/custom_nodes/rgthree-comfy
+[2025-02-05 14:36:43.725]   14.8 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager
+[2025-02-05 14:36:43.725] 
+[2025-02-05 14:36:59.075] Checkpoint files will always be loaded safely.
+[2025-02-05 14:36:59.429] Total VRAM 16076 MB, total RAM 257573 MB
+[2025-02-05 14:36:59.429] pytorch version: 2.6.0+cu124
+[2025-02-05 14:37:14.473] xformers version: 0.0.29.post2
+[2025-02-05 14:37:14.474] Set vram state to: NORMAL_VRAM
+[2025-02-05 14:37:14.474] Device: cuda:0 NVIDIA RTX 2000 Ada Generation : cudaMallocAsync
+[2025-02-05 14:37:17.524] Using xformers attention
+[2025-02-05 14:37:31.780] ComfyUI version: 0.3.13
+[2025-02-05 14:37:31.785] [Prompt Server] web root: /workspace/ComfyUI/web
+[2025-02-05 14:37:46.673] Building prefix dict from the default dictionary ...
+[2025-02-05 14:37:46.673] Building prefix dict from the default dictionary ...
+[2025-02-05 14:37:46.677] Loading model from cache /tmp/jieba.cache
+[2025-02-05 14:37:46.677] Loading model from cache /tmp/jieba.cache
+[2025-02-05 14:37:47.145] Loading model cost 0.465 seconds.
+[2025-02-05 14:37:47.146] Loading model cost 0.465 seconds.
+[2025-02-05 14:37:47.150] Prefix dict has been built successfully.
+[2025-02-05 14:37:47.150] Prefix dict has been built successfully.
+[2025-02-05 14:37:47.150] Word segmentation module jieba initialized.
+[2025-02-05 14:37:47.150] 
+[2025-02-05 14:38:01.862] PyTorch version 2.6.0 available.
+[2025-02-05 14:38:01.871] JAX version 0.5.0 available.
+[2025-02-05 14:38:19.780] [34m[ComfyUI-Easy-Use] server: [0mv1.2.6 [92mLoaded[0m
+[2025-02-05 14:38:19.781] [34m[ComfyUI-Easy-Use] web root: [0m/workspace/ComfyUI/custom_nodes/comfyui-easy-use/web_version/v1 [92mLoaded[0m
+[2025-02-05 14:38:21.026] 
+[2025-02-05 14:38:21.026] [92m[rgthree-comfy] Loaded 42 magnificent nodes. 🎉[00m
+[2025-02-05 14:38:21.026] 
+[2025-02-05 14:38:21.422] ### Loading: ComfyUI-Inspire-Pack (V1.13)
+[2025-02-05 14:38:21.648] ### Loading: ComfyUI-Impact-Pack (V8.8.1)
+[2025-02-05 14:38:22.185] [Impact Pack] Wildcards loading done.
+[2025-02-05 14:38:22.253] Total VRAM 16076 MB, total RAM 257573 MB
+[2025-02-05 14:38:22.253] pytorch version: 2.6.0+cu124
+[2025-02-05 14:38:22.254] xformers version: 0.0.29.post2
+[2025-02-05 14:38:22.254] Set vram state to: NORMAL_VRAM
+[2025-02-05 14:38:22.254] Device: cuda:0 NVIDIA RTX 2000 Ada Generation : cudaMallocAsync
+[2025-02-05 14:38:24.323] /workspace/venv/lib/python3.11/site-packages/albumentations/__init__.py:13: UserWarning: A new version of Albumentations is available: 2.0.3 (you have 1.4.15). Upgrade using: pip install -U albumentations. To disable automatic update checks, set the environment variable NO_ALBUMENTATIONS_UPDATE to 1.
+  check_for_updates()
+[2025-02-05 14:38:25.445] Nvidia APEX normalization not installed, using PyTorch LayerNorm
+[2025-02-05 14:38:25.860] Initializing ControlAltAI Nodes
+[2025-02-05 14:38:26.051] ### Loading: ComfyUI-Manager (V3.17.7)
+[2025-02-05 14:38:26.182] ### ComfyUI Revision: 1 [ef85058e] *DETACHED | Released on '2025-01-29'
+[2025-02-05 14:38:26.476] 
+Import times for custom nodes:
+[2025-02-05 14:38:26.477]    0.0 seconds: /workspace/ComfyUI/custom_nodes/websocket_image_save.py
+[2025-02-05 14:38:26.477]    0.0 seconds: /workspace/ComfyUI/custom_nodes/comfyui-florence2
+[2025-02-05 14:38:26.477]    0.0 seconds: /workspace/ComfyUI/custom_nodes/comfyui_face_parsing
+[2025-02-05 14:38:26.477]    0.0 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-GGUF
+[2025-02-05 14:38:26.477]    0.1 seconds: /workspace/ComfyUI/custom_nodes/comfyui_controlaltai_nodes
+[2025-02-05 14:38:26.477]    0.1 seconds: /workspace/ComfyUI/custom_nodes/comfyui_essentials
+[2025-02-05 14:38:26.477]    0.1 seconds: /workspace/ComfyUI/custom_nodes/comfyui-custom-scripts
+[2025-02-05 14:38:26.477]    0.1 seconds: /workspace/ComfyUI/custom_nodes/comfyui_patches_ll
+[2025-02-05 14:38:26.477]    0.1 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-LTXTricks
+[2025-02-05 14:38:26.477]    0.2 seconds: /workspace/ComfyUI/custom_nodes/comfyui-kjnodes
+[2025-02-05 14:38:26.477]    0.2 seconds: /workspace/ComfyUI/custom_nodes/comfyui-inspire-pack
+[2025-02-05 14:38:26.478]    0.2 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-LTXVideo
+[2025-02-05 14:38:26.478]    0.3 seconds: /workspace/ComfyUI/custom_nodes/comfyui-hunyuanvideowrapper
+[2025-02-05 14:38:26.478]    0.3 seconds: /workspace/ComfyUI/custom_nodes/rgthree-comfy
+[2025-02-05 14:38:26.478]    0.3 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-segment-anything-2
+[2025-02-05 14:38:26.478]    0.4 seconds: /workspace/ComfyUI/custom_nodes/comfyui-ollama
+[2025-02-05 14:38:26.478]    0.4 seconds: /workspace/ComfyUI/custom_nodes/comfyui-videohelpersuite
+[2025-02-05 14:38:26.478]    0.5 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager
+[2025-02-05 14:38:26.478]    0.5 seconds: /workspace/ComfyUI/custom_nodes/comfyui-fluxtrainer
+[2025-02-05 14:38:26.478]    0.6 seconds: /workspace/ComfyUI/custom_nodes/comfyui-impact-pack
+[2025-02-05 14:38:26.478]    0.9 seconds: /workspace/ComfyUI/custom_nodes/comfyui-easy-use
+[2025-02-05 14:38:26.479]    3.2 seconds: /workspace/ComfyUI/custom_nodes/comfyui_pulid_flux_ll
+[2025-02-05 14:38:26.479]    3.4 seconds: /workspace/ComfyUI/custom_nodes/comfyui-cogvideoxwrapper
+[2025-02-05 14:38:26.479]    3.7 seconds: /workspace/ComfyUI/custom_nodes/comfyui-mmaudio
+[2025-02-05 14:38:26.479]    4.5 seconds: /workspace/ComfyUI/custom_nodes/comfyui-supir
+[2025-02-05 14:38:26.479]   26.6 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-F5-TTS
+[2025-02-05 14:38:26.479] 
+[2025-02-05 14:38:26.553] Starting server
+
+[2025-02-05 14:38:26.553] To see the GUI go to: http://0.0.0.0:8188
+[2025-02-05 14:38:26.554] To see the GUI go to: http://[::]:8188
+[2025-02-05 14:38:26.629] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[2025-02-05 14:38:26.660] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[2025-02-05 14:38:26.712] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+[2025-02-05 14:38:26.787] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[2025-02-05 14:38:26.820] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[2025-02-05 14:38:33.413] FETCH ComfyRegistry Data: 5/32
+[2025-02-05 14:38:40.636] FETCH ComfyRegistry Data: 10/32
+[2025-02-05 14:38:47.842] FETCH ComfyRegistry Data: 15/32
+[2025-02-05 14:38:54.897] FETCH ComfyRegistry Data: 20/32
+[2025-02-05 14:39:02.140] FETCH ComfyRegistry Data: 25/32
+[2025-02-05 14:39:09.851] FETCH ComfyRegistry Data: 30/32
+[2025-02-05 14:39:13.162] FETCH ComfyRegistry Data [DONE]
+[2025-02-05 14:39:13.237] [ComfyUI-Manager] default cache updated: https://api.comfy.org/nodes
+[2025-02-05 14:39:13.391] nightly_channel: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/remote
+[2025-02-05 14:39:13.396] FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json [DONE]
+[2025-02-05 14:39:13.723] [ComfyUI-Manager] All startup tasks have been completed.
+[2025-02-05 14:41:22.834] FETCH DATA from: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json [DONE]
+[2025-02-05 14:41:25.316] [Inspire Pack] IPAdapterPlus is not installed.
+[2025-02-05 14:43:56.354] got prompt
+[2025-02-05 14:43:56.361] Failed to validate prompt for output 94:
+[2025-02-05 14:43:56.361] * Florence2ModelLoader 93:
+[2025-02-05 14:43:56.361]   - Value not in list: model: 'Florence-2-base' not in []
+[2025-02-05 14:43:56.361] Output will be ignored
+[2025-02-05 14:43:56.362] invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
+[2025-02-05 14:46:52.463] got prompt
+[2025-02-05 14:46:52.487] Downloading Florence2 model to: /workspace/ComfyUI/models/LLM/Florence-2-large-PromptGen-v2.0
+[2025-02-05 14:46:52.822] /workspace/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1204: UserWarning: `local_dir_use_symlinks` parameter is deprecated and will be ignored. The process to download files to a local folder has been updated and do not rely on symlinks anymore. You only need to pass a destination folder as`local_dir`.
+For more details, check out https://huggingface.co/docs/huggingface_hub/main/en/guides/download#download-files-to-local-folder.
+  warnings.warn(
+[2025-02-05 14:46:53.246] /workspace/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1204: UserWarning: `local_dir_use_symlinks` parameter is deprecated and will be ignored. The process to download files to a local folder has been updated and do not rely on symlinks anymore. You only need to pass a destination folder as`local_dir`.
+For more details, check out https://huggingface.co/docs/huggingface_hub/main/en/guides/download#download-files-to-local-folder.
+  warnings.warn(
+[2025-02-05 14:48:11.792] Fetching 15 files: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 15/15 [01:18<00:00,  5.26s/it]
+[2025-02-05 14:48:11.796] Florence2 using sdpa for attention
+[2025-02-05 14:48:12.657] No flash_attn import to remove
+[2025-02-05 14:48:14.648] Florence2LanguageForConditionalGeneration has generative capabilities, as `prepare_inputs_for_generation` is explicitly overwritten. However, it doesn't directly inherit from `GenerationMixin`. From 👉v4.50👈 onwards, `PreTrainedModel` will NOT inherit from `GenerationMixin`, and this model will lose the ability to call `generate` and other related functions.
+  - If you're using `trust_remote_code=True`, you can get rid of this warning by loading the model with an auto class. See https://huggingface.co/docs/transformers/en/model_doc/auto#auto-classes
+  - If you are the owner of the model architecture code, please modify your model class such that it inherits from `GenerationMixin` (after `PreTrainedModel`, otherwise you'll get an exception).
+  - If you are not the owner of the model architecture class, please contact the model code owner to update it.
+[2025-02-05 14:48:44.573] </s><s>A photo-realistic shoot from a front camera angle about a young woman wearing a red hoodie with the text "FABLE SHORT" and "26 YEARS" printed on it, standing in the middle of the image with her hands in her pockets. she has long, wavy black hair and is smiling at the camera. the background is a simple, muted grey color, and the lighting is soft and natural, casting gentle shadows on her face and body. the image has a high level of detail and realism, making it a realistic and lifelike representation of the subject.
+
+1girl, solo, long hair, looking at viewer, smile, black hair, navel, closed mouth, standing, brown eyes, full body, cowboy shot, shorts, hoodie, lips, hood down, red shorts, hands in pockets, realistic, hooded sweatshirt</s>
+[2025-02-05 14:48:44.574] Offloading model...
+[2025-02-05 14:48:45.188] Prompt executed in 112.72 seconds
+[2025-02-05 14:50:02.399] FETCH DATA from: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json [DONE]
+[2025-02-05 14:51:01.484] got prompt
+[2025-02-05 14:51:01.513] Loading model from /workspace/ComfyUI/models/LLM/Florence-2-large-PromptGen-v2.0
+[2025-02-05 14:51:01.513] Florence2 using sdpa for attention
+[2025-02-05 14:51:01.541] No flash_attn import to remove
+[2025-02-05 14:51:06.566] </s><s>A photo-realistic shoot from a front camera angle about a young woman wearing a red hoodie with the text "FABLE SHORT" and "26 YEARS" printed on it, standing in the middle of the image with her hands in her pockets. she has long, wavy black hair and is smiling at the camera. the background is a simple, muted grey color, and the lighting is soft and natural, casting gentle shadows on her face and body. the image has a high level of detail and realism, making it a realistic and lifelike representation of the subject.
+
+1girl, solo, long hair, looking at viewer, smile, black hair, navel, closed mouth, standing, brown eyes, full body, cowboy shot, shorts, hoodie, lips, hood down, red shorts, hands in pockets, realistic, hooded sweatshirt</s>
+[2025-02-05 14:51:06.566] Offloading model...
+[2025-02-05 14:51:07.144] Prompt executed in 5.65 seconds
+[2025-02-05 14:51:19.848] got prompt
+[2025-02-05 14:51:20.187] !!! Exception during processing !!! Text input (prompt) is only supported for 'referring_expression_segmentation', 'caption_to_phrase_grounding', and 'docvqa'
+[2025-02-05 14:51:20.189] Traceback (most recent call last):
+  File "/workspace/ComfyUI/execution.py", line 327, in execute
+    output_data, output_ui, has_subgraph = get_output_data(obj, input_data_all, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/ComfyUI/execution.py", line 202, in get_output_data
+    return_values = _map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/ComfyUI/execution.py", line 174, in _map_node_over_list
+    process_inputs(input_dict, i)
+  File "/workspace/ComfyUI/execution.py", line 163, in process_inputs
+    results.append(getattr(obj, func)(**inputs))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/ComfyUI/custom_nodes/comfyui-florence2/nodes.py", line 286, in encode
+    raise ValueError("Text input (prompt) is only supported for 'referring_expression_segmentation', 'caption_to_phrase_grounding', and 'docvqa'")
+ValueError: Text input (prompt) is only supported for 'referring_expression_segmentation', 'caption_to_phrase_grounding', and 'docvqa'
+
+[2025-02-05 14:51:20.190] Prompt executed in 0.33 seconds
+[2025-02-05 14:51:41.441] got prompt
+[2025-02-05 14:51:47.795] </s><s><s><s><loc_400><loc_104><loc_402><loc_100><loc_405><loc_97><loc_405><loc_95><loc_407><loc_92><loc_410><loc_88><loc_413><loc_85><loc_417><loc_82><loc_420><loc_79><loc_424><loc_75><loc_427><loc_72><loc_429><loc_69><loc_432><loc_67><loc_434><loc_64><loc_437><loc_61><loc_440><loc_57><loc_443><loc_54><loc_446><loc_51><loc_450><loc_48><loc_453><loc_45><loc_456><loc_43><loc_461><loc_41><loc_464><loc_40><loc_469><loc_39><loc_474><loc_38><loc_480><loc_37><loc_486><loc_36><loc_492><loc_35><loc_504><loc_35><loc_509><loc_36><loc_512><loc_37><loc_516><loc_39><loc_519><loc_40><loc_522><loc_40><loc_526><loc_41><loc_529><loc_43><loc_533><loc_44><loc_536><loc_46><loc_541><loc_47><loc_545><loc_49><loc_549><loc_51><loc_552><loc_53><loc_555><loc_55><loc_558><loc_58><loc_560><loc_61><loc_563><loc_64><loc_566><loc_67><loc_569><loc_70><loc_572><loc_73><loc_575><loc_76><loc_577><loc_79><loc_580><loc_82><loc_583><loc_85><loc_585><loc_88><loc_588><loc_90><loc_591><loc_94><loc_593><loc_97><loc_595><loc_100><loc_597><loc_103><loc_598><loc_106><loc_600><loc_109><loc_601><loc_112><loc_603><loc_115><loc_604><loc_118><loc_606><loc_121><loc_607><loc_124><loc_608><loc_127><loc_610><loc_130><loc_611><loc_133><loc_613><loc_136><loc_614><loc_139><loc_616><loc_142><loc_617><loc_145><loc_619><loc_148><loc_620><loc_151><loc_622><loc_154><loc_623><loc_157><loc_625><loc_160><loc_626><loc_163><loc_628><loc_166><loc_629><loc_169><loc_631><loc_172><loc_632><loc_175><loc_633><loc_178><loc_635><loc_181><loc_636><loc_184><loc_638><loc_187><loc_639><loc_190><loc_640><loc_194><loc_642><loc_197><loc_643><loc_200><loc_645><loc_203><loc_646><loc_206><loc_648><loc_209><loc_649><loc_212><loc_651><loc_215><loc_652><loc_218><loc_653><loc_221><loc_655><loc_224><loc_657><loc_227><loc_658><loc_230><loc_659><loc_233><loc_661><loc_236><loc_662><loc_239><loc_663><loc_242><loc_665><loc_245><loc_666><loc_248><loc_668><loc_251><loc_670><loc_254><loc_671><loc_257><loc_672><loc_260><loc_673><loc_263><loc_675><loc_266><loc_676><loc_269><loc_678><loc_272><loc_679><loc_275><loc_680><loc_278><loc_682><loc_281><loc_683><loc_284><loc_685><loc_287><loc_686><loc_290><loc_688><loc_293><loc_689><loc_296><loc_691><loc_299><loc_692><loc_302><loc_693><loc_305><loc_695><loc_308><loc_696><loc_311><loc_698><loc_314><loc_699><loc_317><loc_701><loc_320><loc_703><loc_323><loc_704><loc_326><loc_706><loc_329><loc_707><loc_332><loc_709><loc_335><loc_710><loc_338><loc_711><loc_341><loc_712><loc_344><loc_714><loc_347><loc_715><loc_350><loc_717><loc_353><loc_718><loc_356><loc_720><loc_359><loc_721><loc_362><loc_722><loc_365><loc_723><loc_368><loc_725><loc_371><loc_726><loc_374><loc_728><loc_377><loc_729><loc_380><loc_730><loc_383><loc_731><loc_386><loc_733><loc_389><loc_734><loc_392><loc_735><loc_395><loc_736><loc_398><loc_738><loc_401><loc_739><loc_404><loc_741><loc_407><loc_742><loc_410><loc_743><loc_413><loc_745><loc_416><loc_746><loc_419><loc_747><loc_422><loc_748><loc_425><loc_749><loc_428><loc_751><loc_431><loc_752><loc_434><loc_753><loc_437><loc_755><loc_440><loc_756><loc_443><loc_757><loc_446><loc_758><loc_449><loc_760><loc_452><loc_761><loc_455><loc_762><loc_458><loc_763><loc_461><loc_764><loc_464><loc_765><loc_467><loc_767><loc_470><loc_768><loc_473><loc_769><loc_476><loc_771><loc_479><loc_772><loc_482><loc_774><loc_485><loc_775><loc_488><loc_777><loc_491><loc_778><loc_495><loc_779><loc_498><loc_780><loc_501><loc_781><loc_504><loc_782><loc_507><loc_783><loc_510><loc_784><loc_513><loc_785><loc_516><loc_786><loc_519><loc_787><loc_522><loc_788><loc_525><loc_789><loc_528><loc_790><loc_531><loc_791><loc_534><loc_792><loc_537><loc_794><loc_540><loc_795><loc_543><loc_796><loc_546><loc_798><loc_549><loc_799><loc_552><loc_800><loc_555><loc_801><loc_558><loc_802><loc_560><loc_803><loc_563><loc_804><loc_566><loc_805><loc_569><loc_806><loc_572><loc_807><loc_575><loc_808><loc_578><loc_809><loc_581><loc_810><loc_584><loc_811><loc_587><loc_812><loc_590><loc_813><loc_592><loc_814><loc_595><loc_815><loc_598><loc_816><loc_601><loc_817><loc_604><loc_818><loc_607><loc_819><loc_610><loc_820><loc_613><loc_821><loc_616><loc_822><loc_619><loc_823><loc_622><loc_824><loc_625><loc_825><loc_628><loc_826><loc_631><loc_827><loc_634><loc_828><loc_637><loc_829><loc_640><loc_830><loc_643><loc_831><loc_646><loc_832><loc_649><loc_833><loc_652><loc_834><loc_655><loc_835><loc_658><loc_836><loc_661><loc_837><loc_664><loc_838><loc_667><loc_839><loc_670><loc_840><loc_673><loc_841><loc_676><loc_842><loc_679><loc_843><loc_682><loc_844><loc_685><loc_845><loc_688><loc_846><loc_691><loc_847><loc_694><loc_848><loc_697><loc_849><loc_700><loc_850><loc_703><loc_851><loc_706><loc_852><loc_709><loc_853><loc_711><loc_854><loc_714><loc_855><loc_716><loc_856><loc_719><loc_857><loc_722><loc_858><loc_725><loc_859><loc_728><loc_860><loc_731><loc_861><loc_734><loc_862><loc_737><loc_862><loc_740><loc_861><loc_743><loc_860><loc_746><loc_859><loc_749><loc_858><loc_752><loc_857><loc_755><loc_856><loc_758><loc_855><loc_760><loc_854><loc_762><loc_852><loc_764><loc_851><loc_766><loc_850><loc_768><loc_849><loc_770><loc_848><loc_772><loc_847><loc_774><loc_846><loc_776><loc_845><loc_779><loc_844><loc_782><loc_843><loc_785><loc_842><loc_788><loc_841><loc_790><loc_840><loc_792><loc_839><loc_794><loc_838><loc_797><loc_837><loc_799><loc_836><loc_801><loc_835><loc_803><loc_834><loc_805><loc_833><loc_807><loc_832><loc_809><loc_831><loc_811></s>
+[2025-02-05 14:51:47.828] Offloading model...
+[2025-02-05 14:51:48.152] Prompt executed in 6.70 seconds
+[2025-02-05 14:52:17.920] got prompt
+[2025-02-05 14:52:18.380] !!! Exception during processing !!! Text input (prompt) is only supported for 'referring_expression_segmentation', 'caption_to_phrase_grounding', and 'docvqa'
+[2025-02-05 14:52:18.382] Traceback (most recent call last):
+  File "/workspace/ComfyUI/execution.py", line 327, in execute
+    output_data, output_ui, has_subgraph = get_output_data(obj, input_data_all, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/ComfyUI/execution.py", line 202, in get_output_data
+    return_values = _map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/ComfyUI/execution.py", line 174, in _map_node_over_list
+    process_inputs(input_dict, i)
+  File "/workspace/ComfyUI/execution.py", line 163, in process_inputs
+    results.append(getattr(obj, func)(**inputs))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/ComfyUI/custom_nodes/comfyui-florence2/nodes.py", line 286, in encode
+    raise ValueError("Text input (prompt) is only supported for 'referring_expression_segmentation', 'caption_to_phrase_grounding', and 'docvqa'")
+ValueError: Text input (prompt) is only supported for 'referring_expression_segmentation', 'caption_to_phrase_grounding', and 'docvqa'
+
+[2025-02-05 14:52:18.383] Prompt executed in 0.45 seconds
+[2025-02-05 14:52:28.205] got prompt
+[2025-02-05 14:52:30.582] </s><s><s><s>A photo-realistic shoot from a front camera angle about a young woman wearing a red hoodie with the text "fable shorts" and "26 years" printed on it, standing confidently with her hands in her pockets, smiling at the camera. she has long, wavy black hair and is standing in the middle of the image, with a neutral gray background. the woman appears to be of asian descent and is wearing red shorts, which are pulled up to reveal her legs. her facial expression is a friendly smile, and she is looking directly at the viewer with her brown eyes. her hair is styled in loose waves and falls down her back, framing her face. the image has a soft, natural lighting that highlights her features and creates a warm, inviting atmosphere.
+
+1girl, solo, long hair, looking at viewer, smile, black hair, navel, closed mouth, standing, brown eyes, full body, male focus, shorts, hoodie, lips, hood, grey background, hands in pockets, realistic, hood down, red shorts</s>
+[2025-02-05 14:52:32.997] Offloading model...
+[2025-02-05 14:52:33.279] Prompt executed in 5.05 seconds
+[2025-02-05 14:52:57.587] got prompt
+[2025-02-05 14:52:57.915] !!! Exception during processing !!! Text input (prompt) is only supported for 'referring_expression_segmentation', 'caption_to_phrase_grounding', and 'docvqa'
+[2025-02-05 14:52:57.919] Traceback (most recent call last):
+  File "/workspace/ComfyUI/execution.py", line 327, in execute
+    output_data, output_ui, has_subgraph = get_output_data(obj, input_data_all, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/ComfyUI/execution.py", line 202, in get_output_data
+    return_values = _map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/ComfyUI/execution.py", line 174, in _map_node_over_list
+    process_inputs(input_dict, i)
+  File "/workspace/ComfyUI/execution.py", line 163, in process_inputs
+    results.append(getattr(obj, func)(**inputs))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/ComfyUI/custom_nodes/comfyui-florence2/nodes.py", line 286, in encode
+    raise ValueError("Text input (prompt) is only supported for 'referring_expression_segmentation', 'caption_to_phrase_grounding', and 'docvqa'")
+ValueError: Text input (prompt) is only supported for 'referring_expression_segmentation', 'caption_to_phrase_grounding', and 'docvqa'
+
+[2025-02-05 14:52:57.921] Prompt executed in 0.32 seconds
+[2025-02-05 14:53:09.991] got prompt
+[2025-02-05 14:53:10.178] !!! Exception during processing !!! Text input (prompt) is only supported for 'referring_expression_segmentation', 'caption_to_phrase_grounding', and 'docvqa'
+[2025-02-05 14:53:10.180] Traceback (most recent call last):
+  File "/workspace/ComfyUI/execution.py", line 327, in execute
+    output_data, output_ui, has_subgraph = get_output_data(obj, input_data_all, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb)
+                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/ComfyUI/execution.py", line 202, in get_output_data
+    return_values = _map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True, execution_block_cb=execution_block_cb, pre_execute_cb=pre_execute_cb)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/ComfyUI/execution.py", line 174, in _map_node_over_list
+    process_inputs(input_dict, i)
+  File "/workspace/ComfyUI/execution.py", line 163, in process_inputs
+    results.append(getattr(obj, func)(**inputs))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/ComfyUI/custom_nodes/comfyui-florence2/nodes.py", line 286, in encode
+    raise ValueError("Text input (prompt) is only supported for 'referring_expression_segmentation', 'caption_to_phrase_grounding', and 'docvqa'")
+ValueError: Text input (prompt) is only supported for 'referring_expression_segmentation', 'caption_to_phrase_grounding', and 'docvqa'
+
+[2025-02-05 14:53:10.182] Prompt executed in 0.18 seconds
+[2025-02-05 14:53:39.699] got prompt
+[2025-02-05 14:53:40.557] </s><s><s><s>to_phrase_grounding, 1girl, solo, looking at viewer, smile, black hair, hair between eyes, closed mouth, standing, full body, shorts, hood, hoodie, grey background, red shorts, lips, hood down, drawstring, portrait, hood up, red hoodie</s>
+[2025-02-05 14:53:41.316] Offloading model...
+[2025-02-05 14:53:41.605] Prompt executed in 1.88 seconds
+[2025-02-05 14:54:04.322] got prompt
+[2025-02-05 14:54:05.188] </s><s><s><s>the face<loc_386><loc_74><loc_628><loc_264></s>
+[2025-02-05 14:54:05.199] match index: 0 in mask_indexes: ['0']
+[2025-02-05 14:54:05.917] Offloading model...
+[2025-02-05 14:54:06.206] Prompt executed in 1.87 seconds
+[2025-02-05 14:54:06.463] got prompt
+[2025-02-05 14:54:06.487] Prompt executed in 0.01 seconds
+[2025-02-05 14:54:25.441] got prompt
+[2025-02-05 14:54:27.519] </s><s>A photo-realistic shoot from a front camera angle about a young woman wearing a red hoodie with the text "FABLE SHORT" and "26 YEARS" printed on it, standing in the middle of the image with her hands in her pockets. she has long, wavy black hair and is smiling at the camera. the background is a simple, muted grey color, and the lighting is soft and natural, casting gentle shadows on her face and body. the image has a high level of detail and realism, making it a realistic and lifelike representation of the subject.
+
+1girl, solo, long hair, looking at viewer, smile, black hair, navel, closed mouth, standing, brown eyes, full body, cowboy shot, shorts, hoodie, lips, hood down, red shorts, hands in pockets, realistic, hooded sweatshirt</s>
+[2025-02-05 14:54:27.520] Offloading model...
+[2025-02-05 14:54:27.804] Prompt executed in 2.35 seconds

@@ -1,0 +1,258 @@
+## ComfyUI-Manager: installing dependencies done.
+[2025-02-05 20:46:28.800] ** ComfyUI startup time: 2025-02-05 20:46:28.800
+[2025-02-05 20:46:28.800] ** Platform: Linux
+[2025-02-05 20:46:28.801] ** Python version: 3.11.10 (main, Sep  7 2024, 18:35:41) [GCC 11.4.0]
+[2025-02-05 20:46:28.801] ** Python executable: /workspace/venv/bin/python
+[2025-02-05 20:46:28.801] ** ComfyUI Path: /workspace/ComfyUI
+[2025-02-05 20:46:28.801] ** ComfyUI Base Folder Path: /workspace/ComfyUI
+[2025-02-05 20:46:28.801] ** User directory: /workspace/ComfyUI/user
+[2025-02-05 20:46:28.801] ** ComfyUI-Manager config path: /workspace/ComfyUI/user/default/ComfyUI-Manager/config.ini
+[2025-02-05 20:46:28.801] ** Log path: /workspace/ComfyUI/user/comfyui.log
+
+Prestartup times for custom nodes:
+[2025-02-05 20:46:33.950]    0.0 seconds: /workspace/ComfyUI/custom_nodes/rgthree-comfy
+[2025-02-05 20:46:33.950]    0.0 seconds: /workspace/ComfyUI/custom_nodes/comfyui-easy-use
+[2025-02-05 20:46:33.950]   11.3 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager
+[2025-02-05 20:46:33.950] 
+[2025-02-05 20:46:46.700] Checkpoint files will always be loaded safely.
+[2025-02-05 20:46:47.007] Total VRAM 24210 MB, total RAM 192358 MB
+[2025-02-05 20:46:47.007] pytorch version: 2.6.0+cu124
+[2025-02-05 20:46:59.973] xformers version: 0.0.29.post2
+[2025-02-05 20:46:59.974] Set vram state to: NORMAL_VRAM
+[2025-02-05 20:46:59.974] Device: cuda:0 NVIDIA GeForce RTX 4090 : cudaMallocAsync
+[2025-02-05 20:47:02.634] Using xformers attention
+[2025-02-05 20:47:14.529] ComfyUI version: 0.3.13
+[2025-02-05 20:47:14.532] [Prompt Server] web root: /workspace/ComfyUI/web
+[2025-02-05 20:47:27.292] Building prefix dict from the default dictionary ...
+[2025-02-05 20:47:27.292] Building prefix dict from the default dictionary ...
+[2025-02-05 20:47:27.549] Dumping model to file cache /tmp/jieba.cache
+[2025-02-05 20:47:27.549] Dumping model to file cache /tmp/jieba.cache
+[2025-02-05 20:47:27.579] Loading model cost 0.281 seconds.
+[2025-02-05 20:47:27.579] Loading model cost 0.281 seconds.
+[2025-02-05 20:47:27.583] Prefix dict has been built successfully.
+[2025-02-05 20:47:27.583] Prefix dict has been built successfully.
+[2025-02-05 20:47:27.583] Word segmentation module jieba initialized.
+[2025-02-05 20:47:27.583] 
+[2025-02-05 20:47:39.556] PyTorch version 2.6.0 available.
+[2025-02-05 20:47:39.561] JAX version 0.5.0 available.
+[2025-02-05 20:47:41.554] generated new fontManager
+[2025-02-05 20:47:54.676] [34m[ComfyUI-Easy-Use] server: [0mv1.2.6 [92mLoaded[0m
+[2025-02-05 20:47:54.676] [34m[ComfyUI-Easy-Use] web root: [0m/workspace/ComfyUI/custom_nodes/comfyui-easy-use/web_version/v1 [92mLoaded[0m
+[2025-02-05 20:47:55.701] 
+[2025-02-05 20:47:55.701] [92m[rgthree-comfy] Loaded 42 exciting nodes. 🎉[00m
+[2025-02-05 20:47:55.701] 
+[2025-02-05 20:47:56.040] ### Loading: ComfyUI-Inspire-Pack (V1.13)
+[2025-02-05 20:47:56.219] ### Loading: ComfyUI-Impact-Pack (V8.8.1)
+[2025-02-05 20:47:56.632] [Impact Pack] Wildcards loading done.
+[2025-02-05 20:47:56.656] Total VRAM 24210 MB, total RAM 192358 MB
+[2025-02-05 20:47:56.656] pytorch version: 2.6.0+cu124
+[2025-02-05 20:47:56.656] xformers version: 0.0.29.post2
+[2025-02-05 20:47:56.657] Set vram state to: NORMAL_VRAM
+[2025-02-05 20:47:56.657] Device: cuda:0 NVIDIA GeForce RTX 4090 : cudaMallocAsync
+[2025-02-05 20:47:57.890] /workspace/venv/lib/python3.11/site-packages/albumentations/__init__.py:13: UserWarning: A new version of Albumentations is available: 2.0.3 (you have 1.4.15). Upgrade using: pip install -U albumentations. To disable automatic update checks, set the environment variable NO_ALBUMENTATIONS_UPDATE to 1.
+  check_for_updates()
+[2025-02-05 20:47:58.790] Nvidia APEX normalization not installed, using PyTorch LayerNorm
+[2025-02-05 20:47:59.094] Initializing ControlAltAI Nodes
+[2025-02-05 20:47:59.243] ### Loading: ComfyUI-Manager (V3.17.7)
+[2025-02-05 20:47:59.324] ### ComfyUI Revision: 1 [ef85058e] *DETACHED | Released on '2025-01-29'
+[2025-02-05 20:47:59.577] 
+Import times for custom nodes:
+[2025-02-05 20:47:59.577]    0.0 seconds: /workspace/ComfyUI/custom_nodes/websocket_image_save.py
+[2025-02-05 20:47:59.577]    0.0 seconds: /workspace/ComfyUI/custom_nodes/comfyui-florence2
+[2025-02-05 20:47:59.577]    0.0 seconds: /workspace/ComfyUI/custom_nodes/comfyui_face_parsing
+[2025-02-05 20:47:59.577]    0.0 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-GGUF
+[2025-02-05 20:47:59.577]    0.0 seconds: /workspace/ComfyUI/custom_nodes/comfyui_controlaltai_nodes
+[2025-02-05 20:47:59.577]    0.1 seconds: /workspace/ComfyUI/custom_nodes/comfyui_essentials
+[2025-02-05 20:47:59.577]    0.1 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-LTXTricks
+[2025-02-05 20:47:59.577]    0.1 seconds: /workspace/ComfyUI/custom_nodes/comfyui_patches_ll
+[2025-02-05 20:47:59.577]    0.1 seconds: /workspace/ComfyUI/custom_nodes/comfyui-custom-scripts
+[2025-02-05 20:47:59.577]    0.1 seconds: /workspace/ComfyUI/custom_nodes/comfyui-kjnodes
+[2025-02-05 20:47:59.577]    0.2 seconds: /workspace/ComfyUI/custom_nodes/comfyui-inspire-pack
+[2025-02-05 20:47:59.577]    0.2 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-LTXVideo
+[2025-02-05 20:47:59.577]    0.2 seconds: /workspace/ComfyUI/custom_nodes/rgthree-comfy
+[2025-02-05 20:47:59.577]    0.2 seconds: /workspace/ComfyUI/custom_nodes/comfyui-hunyuanvideowrapper
+[2025-02-05 20:47:59.577]    0.3 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-segment-anything-2
+[2025-02-05 20:47:59.577]    0.3 seconds: /workspace/ComfyUI/custom_nodes/comfyui-ollama
+[2025-02-05 20:47:59.577]    0.3 seconds: /workspace/ComfyUI/custom_nodes/comfyui-fluxtrainer
+[2025-02-05 20:47:59.577]    0.4 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager
+[2025-02-05 20:47:59.577]    0.4 seconds: /workspace/ComfyUI/custom_nodes/comfyui-impact-pack
+[2025-02-05 20:47:59.577]    0.5 seconds: /workspace/ComfyUI/custom_nodes/comfyui-videohelpersuite
+[2025-02-05 20:47:59.577]    0.7 seconds: /workspace/ComfyUI/custom_nodes/comfyui-easy-use
+[2025-02-05 20:47:59.577]    2.1 seconds: /workspace/ComfyUI/custom_nodes/comfyui_pulid_flux_ll
+[2025-02-05 20:47:59.577]    3.0 seconds: /workspace/ComfyUI/custom_nodes/comfyui-cogvideoxwrapper
+[2025-02-05 20:47:59.577]    3.0 seconds: /workspace/ComfyUI/custom_nodes/comfyui-mmaudio
+[2025-02-05 20:47:59.577]    3.5 seconds: /workspace/ComfyUI/custom_nodes/comfyui-supir
+[2025-02-05 20:47:59.577]   22.6 seconds: /workspace/ComfyUI/custom_nodes/ComfyUI-F5-TTS
+[2025-02-05 20:47:59.577] 
+[2025-02-05 20:47:59.620] Starting server
+
+[2025-02-05 20:47:59.620] To see the GUI go to: http://0.0.0.0:8188
+[2025-02-05 20:47:59.621] To see the GUI go to: http://[::]:8188
+[2025-02-05 20:47:59.728] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[2025-02-05 20:47:59.743] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[2025-02-05 20:47:59.768] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+[2025-02-05 20:47:59.821] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[2025-02-05 20:47:59.842] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[2025-02-05 20:48:07.573] FETCH ComfyRegistry Data: 5/32
+[2025-02-05 20:48:15.090] FETCH ComfyRegistry Data: 10/32
+[2025-02-05 20:48:22.611] FETCH ComfyRegistry Data: 15/32
+[2025-02-05 20:48:33.195] FETCH ComfyRegistry Data: 20/32
+[2025-02-05 20:48:39.953] FETCH ComfyRegistry Data: 25/32
+[2025-02-05 20:48:47.533] FETCH ComfyRegistry Data: 30/32
+[2025-02-05 20:48:51.226] FETCH ComfyRegistry Data [DONE]
+[2025-02-05 20:48:51.248] [ComfyUI-Manager] default cache updated: https://api.comfy.org/nodes
+[2025-02-05 20:48:51.360] nightly_channel: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/remote
+[2025-02-05 20:48:51.363] FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json [DONE]
+[2025-02-05 20:48:51.630] [ComfyUI-Manager] All startup tasks have been completed.
+[2025-02-05 20:58:58.745] FETCH DATA from: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json [DONE]
+[2025-02-05 20:59:00.662] [Inspire Pack] IPAdapterPlus is not installed.
+[2025-02-05 21:08:41.533] got prompt
+[2025-02-05 21:08:41.625] Failed to validate prompt for output 60:
+[2025-02-05 21:08:41.625] * LoadImage 106:
+[2025-02-05 21:08:41.625]   - Custom validation failed for node: image - Invalid image file: baloons.png
+[2025-02-05 21:08:41.625] * LTXVCLIPModelLoader 105:
+[2025-02-05 21:08:41.625]   - Value not in list: clip_path: 'PixArt-XL-2-1024-MS/text_encoder/model-00001-of-00002.safetensors' not in []
+[2025-02-05 21:08:41.626] Output will be ignored
+[2025-02-05 21:08:41.626] invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
+[2025-02-05 21:11:30.122] FETCH DATA from: /workspace/ComfyUI/user/default/ComfyUI-Manager/cache/4245046894_model-list.json [DONE]
+[2025-02-05 21:11:40.010] Install model 'PixArt-XL-2-1024-MS.safetensors (diffusion)' from 'https://huggingface.co/PixArt-alpha/PixArt-XL-2-1024-MS/resolve/main/transformer/diffusion_pytorch_model.safetensors' into '/workspace/ComfyUI/models/diffusion_models/PixArt-Alpha/PixArt-XL-2-1024-MS.safetensors'
+[2025-02-05 21:12:38.566] 100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍| 2.44G/2.45G [00:57<00:00, 42.5MB/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋| 2.44G/2.45G [00:57<00:00, 42.3MB/s]100%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉| 2.45G/2.45G [00:58<00:00, 42.5MB/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2.45G/2.45G [00:58<00:00, 42.1MB/s]
+[2025-02-05 21:12:38.857] 
+[ComfyUI-Manager] Queued works are completed.
+{'install-model': 1}
+[2025-02-05 21:12:38.857] 
+After restarting ComfyUI, please refresh the browser.
+[2025-02-05 21:13:17.946] FETCH DATA from: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json [DONE]
+[2025-02-05 21:13:35.723] got prompt
+[2025-02-05 21:13:35.770] Failed to validate prompt for output 60:
+[2025-02-05 21:13:35.770] * LoadImage 106:
+[2025-02-05 21:13:35.770]   - Custom validation failed for node: image - Invalid image file: baloons.png
+[2025-02-05 21:13:35.770] * LTXVCLIPModelLoader 105:
+[2025-02-05 21:13:35.770]   - Value not in list: clip_path: 'PixArt-XL-2-1024-MS/text_encoder/model-00001-of-00002.safetensors' not in []
+[2025-02-05 21:13:35.770] Output will be ignored
+[2025-02-05 21:13:35.770] invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
+[2025-02-05 21:16:56.768] got prompt
+[2025-02-05 21:16:56.834] Failed to validate prompt for output 60:
+[2025-02-05 21:16:56.834] * LoadImage 106:
+[2025-02-05 21:16:56.834]   - Custom validation failed for node: image - Invalid image file: baloons.png
+[2025-02-05 21:16:56.834] * LTXVCLIPModelLoader 105:
+[2025-02-05 21:16:56.834]   - Value not in list: clip_path: 'PixArt-XL-2-1024-MS/text_encoder/model-00001-of-00002.safetensors' not in []
+[2025-02-05 21:16:56.834] Output will be ignored
+[2025-02-05 21:16:56.834] invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
+[2025-02-05 21:20:06.500] got prompt
+[2025-02-05 21:20:06.520] Failed to validate prompt for output 41:
+[2025-02-05 21:20:06.520] * LoadImage 78:
+[2025-02-05 21:20:06.520]   - Custom validation failed for node: image - Invalid image file: island.jpg
+[2025-02-05 21:20:06.520] * CLIPLoader 38:
+[2025-02-05 21:20:06.520]   - Value not in list: clip_name: 't5xxl_fp16.safetensors' not in []
+[2025-02-05 21:20:06.520] Output will be ignored
+[2025-02-05 21:20:06.520] invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
+[2025-02-05 21:20:13.925] got prompt
+[2025-02-05 21:20:13.934] Failed to validate prompt for output 41:
+[2025-02-05 21:20:13.934] * LoadImage 78:
+[2025-02-05 21:20:13.934]   - Custom validation failed for node: image - Invalid image file: island.jpg
+[2025-02-05 21:20:13.934] * CLIPLoader 38:
+[2025-02-05 21:20:13.934]   - Value not in list: clip_name: 't5xxl_fp16.safetensors' not in []
+[2025-02-05 21:20:13.934] Output will be ignored
+[2025-02-05 21:20:13.934] invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
+[2025-02-05 21:32:08.437] FETCH DATA from: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json [DONE]
+[2025-02-05 21:32:25.701] got prompt
+[2025-02-05 21:32:25.719] Failed to validate prompt for output 41:
+[2025-02-05 21:32:25.719] * LoadImage 78:
+[2025-02-05 21:32:25.719]   - Custom validation failed for node: image - Invalid image file: island.jpg
+[2025-02-05 21:32:25.719] Output will be ignored
+[2025-02-05 21:32:25.719] invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
+[2025-02-05 21:33:06.814] got prompt
+[2025-02-05 21:33:08.574] model weight dtype torch.bfloat16, manual cast: None
+[2025-02-05 21:33:08.590] model_type FLUX
+[2025-02-05 21:33:38.520] VAE load device: cuda:0, offload device: cpu, dtype: torch.bfloat16
+[2025-02-05 21:33:38.520] no CLIP/text encoder weights in checkpoint, the text encoder model will not be loaded.
+[2025-02-05 21:33:40.235] CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+[2025-02-05 21:34:11.142] Requested to load MochiTEModel_
+[2025-02-05 21:34:13.030] loaded completely 22599.6125 9083.38671875 True
+[2025-02-05 21:34:14.432] Requested to load VideoVAE
+[2025-02-05 21:34:14.714] loaded completely 13416.100777435302 1783.197114944458 True
+[2025-02-05 21:34:16.436] Requested to load LTXV
+[2025-02-05 21:34:17.095] loaded completely 11630.77353363037 3667.902587890625 True
+[2025-02-05 21:34:29.919] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:12<00:00,  2.39it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:12<00:00,  2.35it/s]
+[2025-02-05 21:34:35.261] Prompt executed in 88.44 seconds
+[2025-02-05 21:36:02.707] got prompt
+[2025-02-05 21:36:15.297] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:12<00:00,  2.40it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:12<00:00,  2.42it/s]
+[2025-02-05 21:36:32.490] Prompt executed in 29.74 seconds
+[2025-02-05 21:36:42.952] got prompt
+[2025-02-05 21:36:55.584] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:12<00:00,  2.39it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:12<00:00,  2.41it/s]
+[2025-02-05 21:37:02.636] Prompt executed in 19.62 seconds
+[2025-02-05 21:38:54.251] got prompt
+[2025-02-05 21:38:54.325] Loading model from /workspace/ComfyUI/models/LLM/Florence-2-large-PromptGen-v2.0
+[2025-02-05 21:38:54.325] Florence2 using sdpa for attention
+[2025-02-05 21:38:54.989] No flash_attn import to remove
+[2025-02-05 21:38:56.196] Florence2LanguageForConditionalGeneration has generative capabilities, as `prepare_inputs_for_generation` is explicitly overwritten. However, it doesn't directly inherit from `GenerationMixin`. From 👉v4.50👈 onwards, `PreTrainedModel` will NOT inherit from `GenerationMixin`, and this model will lose the ability to call `generate` and other related functions.
+  - If you're using `trust_remote_code=True`, you can get rid of this warning by loading the model with an auto class. See https://huggingface.co/docs/transformers/en/model_doc/auto#auto-classes
+  - If you are the owner of the model architecture code, please modify your model class such that it inherits from `GenerationMixin` (after `PreTrainedModel`, otherwise you'll get an exception).
+  - If you are not the owner of the model architecture class, please contact the model code owner to update it.
+[2025-02-05 21:39:13.663] </s><s>A dirt road winding through a dense forest at night, with tall grasses on either side and a clear blue sky with stars in the background. the lighting is dim, casting a soft glow on the trees and the dirt path, creating a serene and peaceful atmosphere. the image is taken from a low angle, looking up at the sky, with the trees on both sides of the road and the grasses in the foreground. the overall mood is peaceful and tranquil, with a sense of serenity and tranquility.
+
+outdoors, sky, day, cloud, blue sky, tree, grass, night, road, star \(sky\), night sky</s>
+[2025-02-05 21:39:13.663] Offloading model...
+[2025-02-05 21:39:13.913] Prompt executed in 19.65 seconds
+[2025-02-05 21:39:42.941] got prompt
+[2025-02-05 21:39:45.016] model weight dtype torch.bfloat16, manual cast: None
+[2025-02-05 21:39:45.016] model_type FLUX
+[2025-02-05 21:40:12.745] VAE load device: cuda:0, offload device: cpu, dtype: torch.bfloat16
+[2025-02-05 21:40:12.745] no CLIP/text encoder weights in checkpoint, the text encoder model will not be loaded.
+[2025-02-05 21:40:14.404] CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+[2025-02-05 21:40:46.768] Requested to load MochiTEModel_
+[2025-02-05 21:40:48.150] loaded completely 22481.4875 9083.38671875 True
+[2025-02-05 21:40:48.306] Requested to load VideoVAE
+[2025-02-05 21:40:48.553] loaded completely 13398.100777435302 1783.197114944458 True
+[2025-02-05 21:40:48.580] Requested to load LTXV
+[2025-02-05 21:40:49.045] loaded completely 11614.77353363037 3667.902587890625 True
+[2025-02-05 21:41:01.411] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:12<00:00,  2.41it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:12<00:00,  2.43it/s]
+[2025-02-05 21:41:03.281] Prompt executed in 80.30 seconds
+[2025-02-05 21:42:10.591] got prompt
+[2025-02-05 21:42:23.128] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:12<00:00,  2.41it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:12<00:00,  2.42it/s]
+[2025-02-05 21:42:24.884] Prompt executed in 14.23 seconds
+[2025-02-05 21:42:44.808] got prompt
+[2025-02-05 21:42:57.333] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:12<00:00,  2.40it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:12<00:00,  2.42it/s]
+[2025-02-05 21:42:59.166] Prompt executed in 14.31 seconds
+[2025-02-05 21:52:39.756] FETCH DATA from: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json [DONE]
+[2025-02-05 21:55:02.472] FETCH DATA from: /workspace/ComfyUI/custom_nodes/ComfyUI-Manager/extension-node-map.json [DONE]
+[2025-02-05 21:56:18.271] got prompt
+[2025-02-05 21:56:20.230] Loading MotionFormer config from /workspace/ComfyUI/custom_nodes/comfyui-mmaudio/mmaudio/ext/synchformer/divided_224_16x4.yaml
+[2025-02-05 21:56:24.879] Downloading nvidia bigvgan vocoder model to: /workspace/ComfyUI/models/mmaudio/nvidia/bigvgan_v2_44khz_128band_512x
+[2025-02-05 21:56:25.116] /workspace/venv/lib/python3.11/site-packages/huggingface_hub/file_download.py:1204: UserWarning: `local_dir_use_symlinks` parameter is deprecated and will be ignored. The process to download files to a local folder has been updated and do not rely on symlinks anymore. You only need to pass a destination folder as`local_dir`.
+For more details, check out https://huggingface.co/docs/huggingface_hub/main/en/guides/download#download-files-to-local-folder.
+  warnings.warn(
+[2025-02-05 21:57:02.743] Fetching 29 files: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 29/29 [00:37<00:00,  1.30s/it]
+[2025-02-05 21:57:02.750] Loading config.json from local directory
+[2025-02-05 21:57:03.828] Loading weights from local directory
+[2025-02-05 21:57:13.631] Removing weight norm...
+[2025-02-05 21:57:46.733] Loaded MMAudio model weights from /workspace/ComfyUI/models/mmaudio/mmaudio_large_44k_v2_fp32.safetensors
+[2025-02-05 21:57:46.886] Sync video is too short: 3.88 < 4.04, truncating to 3.88 sec
+[2025-02-05 21:57:47.052] clip_frames torch.Size([31, 3, 384, 384]) sync_frames torch.Size([97, 3, 224, 224]) duration 3.88
+[2025-02-05 21:57:49.800] Flow Matching: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 23.63it/s]
+[2025-02-05 21:57:53.645] Prompt executed in 95.32 seconds
+[2025-02-05 21:58:21.174] got prompt
+[2025-02-05 21:58:21.996] Sync video is too short: 3.88 < 4.04, truncating to 3.88 sec
+[2025-02-05 21:58:22.151] clip_frames torch.Size([31, 3, 384, 384]) sync_frames torch.Size([97, 3, 224, 224]) duration 3.88
+[2025-02-05 21:58:25.422] Flow Matching: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 25/25 [00:01<00:00, 24.29it/s]
+[2025-02-05 21:58:27.521] Prompt executed in 6.29 seconds
+[2025-02-05 21:58:36.465] got prompt
+[2025-02-05 21:58:36.578] Prompt executed in 0.05 seconds
+[2025-02-05 22:00:00.759] moving '/workspace/ComfyUI/user/default/workflows/image-captioning-florence2.json' -> '/workspace/ComfyUI/user/default/workflows/image2prompt-florence2.json'
+[2025-02-05 22:00:18.747] moving '/workspace/ComfyUI/user/default/workflows/image-to-video-ltx.json' -> '/workspace/ComfyUI/user/default/workflows/image2video-ltx.json'
+[2025-02-05 22:00:51.826] moving '/workspace/ComfyUI/user/default/workflows/vid2audio-mmaudio.json' -> '/workspace/ComfyUI/user/default/workflows/video2audio-mmaudio.json'
+[2025-02-05 22:02:38.571] got prompt
+[2025-02-05 22:02:41.299] model weight dtype torch.bfloat16, manual cast: None
+[2025-02-05 22:02:41.299] model_type FLUX
+[2025-02-05 22:03:10.033] VAE load device: cuda:0, offload device: cpu, dtype: torch.bfloat16
+[2025-02-05 22:03:10.034] no CLIP/text encoder weights in checkpoint, the text encoder model will not be loaded.
+[2025-02-05 22:03:12.184] CLIP/text encoder model load device: cuda:0, offload device: cpu, current: cpu, dtype: torch.float16
+[2025-02-05 22:03:45.096] Requested to load MochiTEModel_
+[2025-02-05 22:03:46.490] loaded completely 22477.4875 9083.38671875 True
+[2025-02-05 22:03:46.779] Requested to load VideoVAE
+[2025-02-05 22:03:47.011] loaded completely 13394.100777435302 1783.197114944458 True
+[2025-02-05 22:03:47.122] Requested to load LTXV
+[2025-02-05 22:03:47.582] loaded completely 11610.77353363037 3667.902587890625 True
+[2025-02-05 22:03:59.985] 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:12<00:00,  2.41it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 30/30 [00:12<00:00,  2.42it/s]
+[2025-02-05 22:04:02.695] Prompt executed in 84.02 seconds

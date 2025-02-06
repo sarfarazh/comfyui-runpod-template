@@ -1,0 +1,68 @@
+# comfyui:
+#     base_path: /runpod-volume/ComfyUI/models
+
+#     upscale_models: /runpod-volume/ComfyUI/models/upscale_models/
+#     checkpoints: /runpod-volume/ComfyUI/models/checkpoints/
+#     embeddings: /runpod-volume/ComfyUI/models/embeddings/
+#     controlnet: /runpod-volume/ComfyUI/models/controlnet/
+#     configs: /runpod-volume/ComfyUI/models/configs/
+#     loras: /runpod-volume/ComfyUI/models/loras/
+#     vae: /runpod-volume/ComfyUI/models/vae/
+
+#     unet: /runpod-volume/ComfyUI/models/unet/
+#     clip: /runpod-volume/ComfyUI/models/clip/
+#     clip_vision: /runpod-volume/ComfyUI/models/clip_vision/
+#     style_models: /runpod-volume/ComfyUI/models/style_models/
+#     hypernetworks: /runpod-volume/ComfyUI/models/hypernetworks/
+#     classifiers: /runpod-volume/ComfyUI/models/classifiers/
+#     vae_approx: /runpod-volume/ComfyUI/models/vae_approx/
+#     diffusers: /runpod-volume/ComfyUI/models/diffusers/
+#     gligen: /runpod-volume/ComfyUI/models/gligen/
+
+#     llm: /runpod-volume/ComfyUI/models/LLM/
+
+# comfyui:
+#   base_path: /runpod-volume/ComfyUI/
+#   checkpoints: models/checkpoints/
+#   embeddings: models/embeddings/
+#   vae: models/vae/
+#   loras: models/loras/
+#   upscale_models: models/upscale_models/
+#   controlnet: models/controlnet/
+
+
+comfyui:
+    base_path: /runpod-volume/ComfyUI/
+    is_default: true
+
+    upscale_models: models/upscale_models/
+    checkpoints: models/checkpoints/
+    embeddings: models/embeddings/
+    controlnet: models/controlnet/
+    configs: models/configs/
+    loras: models/loras/
+    vae: models/vae/
+
+    unet: models/unet/
+    clip: models/clip/
+    clip_vision: models/clip_vision/
+    style_models: models/style_models/
+    hypernetworks: models/hypernetworks/
+    classifiers: models/classifiers/
+    vae_approx: models/vae_approx/
+    diffusers: models/diffusers/
+    gligen: models/gligen/
+
+    llm: models/LLM/
+    cogvideo: models/CogVideo/
+    diffusion_models: models/diffusion_models/
+    mmaudio: models/mmaudio/
+    depthcrafter: models/depthcrafter/
+    photomaker: models/photomaker/
+    text_encoders: models/text_encoders/
+    vae_approx: models/vae_approx/
+
+    # Other model folders that were found but not explicitly mentioned in your previous config:
+    esrgan: models/ESRGAN/
+    llama: models/llama/
+    annotator: models/annotator/
