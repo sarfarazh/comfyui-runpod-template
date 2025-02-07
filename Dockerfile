@@ -13,7 +13,8 @@ ENV DEBIAN_FRONTEND=noninteractive \
     MODEL_PATH="/runpod-volume/ComfyUI/models" \
     COMFYUI_PATH="/opt/ComfyUI" \
     CUSTOM_NODES_PATH="/opt/ComfyUI/custom_nodes" \
-    USER_CONFIG_PATH="/opt/ComfyUI/user"
+    USER_CONFIG_PATH="/opt/ComfyUI/user" \
+    RUNPOD_SERVERLESS="true"
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -82,6 +83,7 @@ COPY src/user/default/ComfyUI-Manager/snapshots/custom_nodes_snapshot.json $CUST
 COPY src/extra_model_paths.yaml $COMFYUI_PATH/extra_model_paths.yaml
 COPY src/restore_snapshot.sh /opt/restore_snapshot.sh
 COPY src/user/ $USER_CONFIG_PATH/
+COPY rp_handler.py /opt/rp_handler.py
 
 # Set execute permissions
 RUN chmod +x /opt/restore_snapshot.sh
@@ -100,9 +102,9 @@ RUN pip3 install --no-cache-dir toml && \
 # Expose necessary ports
 EXPOSE 8188 8888 22
 
-# Copy and set execute permissions for start script
+# Copy and set execute permissions for scripts
 COPY start.sh /opt/start.sh
-RUN chmod 755 /opt/start.sh
+RUN chmod 755 /opt/start.sh /opt/rp_handler.py
 
 # Set the entrypoint
 ENTRYPOINT ["/opt/start.sh"]
