@@ -83,7 +83,7 @@ COPY src/user/default/ComfyUI-Manager/snapshots/custom_nodes_snapshot.json $CUST
 COPY src/extra_model_paths.yaml $COMFYUI_PATH/extra_model_paths.yaml
 COPY src/restore_snapshot.sh /opt/restore_snapshot.sh
 COPY src/user/ $USER_CONFIG_PATH/
-COPY rp_handler.py /opt/rp_handler.py
+COPY src/rp_handler.py /opt/rp_handler.py
 
 # Set execute permissions
 RUN chmod +x /opt/restore_snapshot.sh
