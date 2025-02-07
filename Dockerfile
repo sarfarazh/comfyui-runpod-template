@@ -11,7 +11,6 @@ ENV DEBIAN_FRONTEND=noninteractive \
     COMFYUI_PATH="/opt/ComfyUI" \
     CUSTOM_NODES_PATH="/opt/ComfyUI/custom_nodes" \
     USER_CONFIG_PATH="/opt/ComfyUI/user"
-
 # Install system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
@@ -43,10 +42,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Set locale properly
 RUN locale-gen en_US.UTF-8
 
-# Install JupyterLab
+
+# Install JupyterLab and ComfyUI dependencies
 RUN pip3 install --no-cache-dir --upgrade pip setuptools && \
     pip3 install --no-cache-dir jupyterlab notebook jupyter_http_over_ws jupyterlab_code_formatter jupyterlab_widgets terminado onnxruntime-gpu llama-cpp-python xformers accelerate insightface \
-    safetensors "numpy<2"
+    safetensors "numpy<2" comfy-cli
 
 # Clone ComfyUI repository (pinned version)
 RUN git clone --branch v0.3.13 --depth 1 https://github.com/comfyanonymous/ComfyUI.git $COMFYUI_PATH

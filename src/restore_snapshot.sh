@@ -17,9 +17,13 @@ if [ ! -f "$SNAPSHOT_FILE" ]; then
     exit 0
 fi
 
+# Restore snapshot
 echo "runpod-template: Restoring custom nodes from snapshot..."
+comfy node restore-snapshot "$SNAPSHOT_FILE"
+echo "runpod-template: Custom nodes restored successfully."
 
 # Read JSON and clone missing repositories
+echo "runpod-template: Cloning missing repositories from snapshot..."
 jq -r '.git_custom_nodes | to_entries[] | select(.value.disabled == false) | .key' "$SNAPSHOT_FILE" | while read -r repo; do
     repo_name=$(basename "$repo" .git)
     target_dir="$CUSTOM_NODES_DIR/$repo_name"
@@ -37,9 +41,10 @@ jq -r '.git_custom_nodes | to_entries[] | select(.value.disabled == false) | .ke
     fi
 done
 
-echo "runpod-template: Custom nodes cloned successfully"
+echo "runpod-template: Custom nodes cloned successfully."
 
 # Install missing dependencies for each custom node
+echo "runpod-template: Installing dependencies for custom nodes..."
 find "$CUSTOM_NODES_DIR" -name "requirements.txt" -print0 | while IFS= read -r -d '' req_file; do
     if [ -s "$req_file" ]; then
         echo "Installing dependencies from: $req_file"
@@ -49,8 +54,8 @@ find "$CUSTOM_NODES_DIR" -name "requirements.txt" -print0 | while IFS= read -r -
     fi
 done
 
-
-echo "runpod-template: Installed dependencies for custom nodes."
+echo "runpod-template: Fixing dependencies for ComfyUI nodes..."
+python3 "$CUSTOM_NODES_DIR/ComfyUI-Manager/cm-cli.py" restore-dependencies
 
 # Ensure user configuration files are copied
 if [ -d "/src/user" ]; then

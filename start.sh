@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e  # Exit immediately if any command fails
+
 echo "runpod-template: Starting SSH server..."
 service ssh start
 
@@ -25,7 +27,7 @@ chmod -R 755 /opt/ComfyUI
 echo "runpod-template: Running snapshot restoration..."
 /bin/bash /opt/restore_snapshot.sh
 
-# Start JupyterLab (optional)
+# Start JupyterLab
 echo "runpod-template: Starting JupyterLab..."
 nohup jupyter lab --NotebookApp.token="comfyui" \
     --allow-root --no-browser --port=8888 --ip=0.0.0.0 \
@@ -39,9 +41,13 @@ nohup jupyter lab --NotebookApp.token="comfyui" \
 echo "runpod-template: Waiting for JupyterLab..."
 sleep 10
 
-# Start ComfyUI
-echo "runpod-template: Starting ComfyUI..."
-nohup python3 /opt/ComfyUI/main.py --listen --port 8188 &
+# Ensure ComfyUI is not already running before starting it
+if pgrep -f "main.py" > /dev/null; then
+    echo "runpod-template: ComfyUI is already running. Skipping start..."
+else
+    echo "runpod-template: Starting ComfyUI..."
+    nohup python3 /opt/ComfyUI/main.py --listen --port 8188 &
+fi
 
 # Keep container running
 tail -f /dev/null
