@@ -17,31 +17,10 @@ if [ ! -f "$SNAPSHOT_FILE" ]; then
     exit 0
 fi
 
-# Restore snapshot
 echo "runpod-template: Restoring custom nodes from snapshot..."
 comfy node restore-snapshot "$SNAPSHOT_FILE"
+
 echo "runpod-template: Custom nodes restored successfully."
-
-# Read JSON and clone missing repositories
-echo "runpod-template: Cloning missing repositories from snapshot..."
-jq -r '.git_custom_nodes | to_entries[] | select(.value.disabled == false) | .key' "$SNAPSHOT_FILE" | while read -r repo; do
-    repo_name=$(basename "$repo" .git)
-    target_dir="$CUSTOM_NODES_DIR/$repo_name"
-
-    if [ -d "$target_dir" ]; then
-        echo "runpod-template: $repo_name already exists. Skipping..."
-    else
-        echo "runpod-template: Cloning $repo into $target_dir..."
-        # Check if it's the UltimateSDUpscale repository
-        if [[ "$repo" == *"ComfyUI_UltimateSDUpscale"* ]]; then
-            git clone --recursive "$repo" "$target_dir" || { echo "Failed to clone $repo"; exit 1; }
-        else
-            git clone "$repo" "$target_dir" || { echo "Failed to clone $repo"; exit 1; }
-        fi
-    fi
-done
-
-echo "runpod-template: Custom nodes cloned successfully."
 
 # Install missing dependencies for each custom node
 echo "runpod-template: Installing dependencies for custom nodes..."
