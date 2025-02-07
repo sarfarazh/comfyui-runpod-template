@@ -11,6 +11,7 @@ ENV DEBIAN_FRONTEND=noninteractive \
     COMFYUI_PATH="/opt/ComfyUI" \
     CUSTOM_NODES_PATH="/opt/ComfyUI/custom_nodes" \
     USER_CONFIG_PATH="/opt/ComfyUI/user"
+
 # Install system dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
     curl \
@@ -42,7 +43,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Set locale properly
 RUN locale-gen en_US.UTF-8
 
-
 # Install JupyterLab and ComfyUI dependencies
 RUN pip3 install --no-cache-dir --upgrade pip setuptools && \
     pip3 install --no-cache-dir jupyterlab notebook jupyter_http_over_ws jupyterlab_code_formatter jupyterlab_widgets terminado onnxruntime-gpu llama-cpp-python xformers accelerate insightface \
@@ -54,7 +54,7 @@ RUN git clone --branch v0.3.13 --depth 1 https://github.com/comfyanonymous/Comfy
 # Clone ComfyUI-Manager (pinned version) into custom_nodes directory
 RUN git clone --branch 3.17.7 --depth 1 https://github.com/ltdrdata/ComfyUI-Manager.git $CUSTOM_NODES_PATH/ComfyUI-Manager
 
-# Clone ComfyUI-F5-TTS into custom_nodes directory
+# Clone ComfyUI-F5-TTS (text-to-speech support)
 RUN git clone https://github.com/niknah/ComfyUI-F5-TTS.git $CUSTOM_NODES_PATH/ComfyUI-F5-TTS
 
 # Set working directory to ComfyUI
@@ -89,8 +89,10 @@ RUN git submodule update --init --recursive && \
     pip3 install --no-cache-dir -r requirements.txt && \
     pip3 install --no-cache-dir "huggingface-hub~=0.25.2" "gradio>=4.18,<4.24"
 
-# Return to ComfyUI directory
+# Restore dependencies using cm-cli.py
 WORKDIR $COMFYUI_PATH
+RUN pip3 install --no-cache-dir toml && \
+    python3 $CUSTOM_NODES_PATH/ComfyUI-Manager/cm-cli.py restore-dependencies
 
 # Expose necessary ports
 EXPOSE 8188 8888 22
