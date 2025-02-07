@@ -18,7 +18,7 @@ if [ ! -f "$SNAPSHOT_FILE" ]; then
 fi
 
 echo "runpod-template: Restoring custom nodes from snapshot..."
-comfy node restore-snapshot "$SNAPSHOT_FILE"
+echo "N" | comfy node restore-snapshot "$SNAPSHOT_FILE"
 
 echo "runpod-template: Custom nodes restored successfully."
 

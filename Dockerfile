@@ -1,6 +1,9 @@
 # Use the official Python base image with CUDA support
 FROM nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04
 
+# Disable tracking for ComfyUI if supported
+ENV COMFYUI_DISABLE_TRACKING=1
+
 # Set environment variables
 ENV DEBIAN_FRONTEND=noninteractive \
     SHELL="/bin/bash" \

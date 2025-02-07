@@ -25,7 +25,7 @@ chmod -R 755 /opt/ComfyUI
 
 # Restore Custom Nodes from Snapshot before starting ComfyUI
 echo "runpod-template: Running snapshot restoration..."
-/bin/bash /opt/restore_snapshot.sh
+echo "N" | /bin/bash /opt/restore_snapshot.sh
 
 # Start JupyterLab
 echo "runpod-template: Starting JupyterLab..."
